@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Vazir;
+    src: url("./../public/fonts/Vazir.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: VazirLight;
+    src: url("./../public/fonts/Vazir-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: VazirMedium;
+    src: url("./../public/fonts/Vazir-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: VazirBold;
+    src: url("./../public/fonts/Vazir-Bold.woff2") format("woff2");
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .headerbackground {
+    background: linear-gradient(
+        to left,
+        rgb(28, 65, 112, 0.8),
+        rgb(146, 186, 231, 0.2)
+      ),
+      url("./../public/images/headerbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .headerbackgroundmobile {
+    background: linear-gradient(
+        to left,
+        rgb(28, 65, 112, 0.8),
+        rgb(146, 186, 231, 0.2)
+      ),
+      url("./../public/images/headerbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+
+  .serviceiconbackground {
+    height: 130px;
+    width: 160px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .serviceiconbackgroundmobile {
+    height: 110px;
+    width: 140px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+}
